@@ -1,35 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Beautiful Monthleys</title>
-    <!--STYLES CDN-->
-    <link rel="stylesheet" href="src/styles/w3.css">
-    <!--JQUERY CDN-->
-    <script src="src/script/jquery-3.4.1.min.js"></script>
-    <!--NANOGALLERY CDN-->
-</head>
-<body class="w3-pink">
-    <!--HEADER-->
-    <header class="w3-container w3-pink">
-        <nav>
-            <div class="w3-dropdown-hover">
-                <button class="w3-button w3-hover-pink w3-pink"><i class="fa fa-bars"></i> Beautiful Monthleys</button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-pink">
-                    <a href="#" class="w3-bar-item w3-button w3-hover-white">About</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-white">Contact</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-white">Events</a>
-                </div>
-            </div>
-            <button class="w3-button w3-hover-white w3-right"><i class="fa fa-facebook"></i></button>
-            <button class="w3-button w3-hover-white w3-right"><i class="fa fa-twitter"></i></button>
-            <button class="w3-button w3-hover-white w3-right"><i class="fa fa-youtube"></button>
-        </nav>
-    </header>
 
-    <!--SCRIPT-->
-    <script src="src/index.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Home | Beautiful Monthleys</title>
+  </head>
+  <body>
+        <nav class="nav">
+            <a class="nav-link active" href="index.html">HOME</a>
+            <a class="nav-link text-dark" href="about.html">ABOUT</a>
+            <a class="nav-link text-dark" href="events.html">EVENTS</a>
+        </nav>
+      <!-- JUMBROTON -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Beautiful Monthleys</h1>
+          <p class="lead">Making periods easier for the less fortunate.</p>
+        </div>
+    </div>
+    <!-- CAROUSEL -->
+    <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://i.ibb.co/nB6VttJ/IMG-5478.jpg" class="d-block w-100" alt="Photo Credit: Katleho Lefunyane">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Sunset Silent Party Tickets</h5>
+                    <p>Photo Credit: Katleho Lefunyane</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://i.ibb.co/BKzFjb5/IMG-5423.jpg" class="d-block w-100" alt="Photo Credit: Katleho Lefunyane">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Extraordinary Guests</h5>
+                    <p>Photo Credit: Katleho Lefunyane</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://i.ibb.co/5GRkW5b/IMG-5674.jpg" class="d-block w-100" alt="Photo Credit: Katleho Lefunyane">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>A Sunset Themed Occassion</h5>
+                    <p>Photo Credit: Katleho Lefunyane</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+    <!-- FEATURED CARD -->
+    <div class="card text-center">
+        <div class="card-header">
+            Featured Event
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Sunset Silent Party</h5>
+            <p class="card-text">A themed musical experience at Crafter's Bar, Norwood.</p>
+            <a href="/events.html" class="btn btn-dark">See more</a>
+        </div>
+        <div class="card-footer text-muted">
+            2 November 2019
+        </div>
+    </div>
+    <!-- FEATURED CARD -->
+<div class="row text-center">
+<!-- Embed Video -->
+    <div class="col-sm embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OTRyFQA7UHw?rel=0" allowfullscreen></iframe>
+    </div>
+<!--  VIDEO CARD -->
+    <div class="col-sm">
+        <h5 class="card-header">Featured Event</h5>
+        <div class="card-body">
+            <h5 class="card-title">Sunset Silent Party</h5>
+            <p class="card-text">A Sunset Silent Party Promotional Video</p>
+            <hr>
+            <a href="https://www.youtube.com/channel/UCGbuQkfWMnmrBrLv7s45XYg" class="btn btn-danger">Subscribe On YouTube</a>
+            <hr>
+            <a href="https://twitter.com/b_monthleys" class="btn btn-dark">Beautiful Monthleys on Twitter</a>
+            <hr>
+            <a href="https://twitter.com/VaderProd" class="btn btn-dark">Vader Productions on Twitter</a>
+            <hr>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="card-footer text-muted text-center">Beautiful Monthleys | 2019 &copy; Vader Media (PTY LTD)</div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="src/scripts/index.js"></script>
 </body>
 </html>
